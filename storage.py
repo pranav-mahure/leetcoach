@@ -26,7 +26,8 @@ def add_problem(name,platform,difficulty,topic,status):
     problem = {
         "id" : new_id,
         "name" : name,
-        "Dificulty" : difficulty,
+        "platform": platform,
+        "difficulty" : difficulty,
         "status" : status,
         "topic" : topic,
         "Date Solved" : date.today().isoformat(),
