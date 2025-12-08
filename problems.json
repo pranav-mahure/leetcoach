@@ -1,1 +1,15 @@
-[]
+[ # Example
+   {
+        "id": 1,
+        "name": "Trapping Rain Water",
+        "platform": "LeetCode",
+        "difficulty": "Hard",
+        "status": "need_revision",
+        "topic": [
+            "Arrays",
+            "DP",
+            "Pointers"
+        ],
+        "Date Solved": "2025-12-08"
+    },
+]
