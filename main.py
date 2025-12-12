@@ -86,9 +86,29 @@ def filter_problems_flow():
     print("\n=== Filter Problems ===")
     print("Leave blank if you don't want to filter by that field.\n")
 
-    status = input("Status filter (understood/need_revision or blank) :- ").strip()
-    difficulty = input("Difficulty filter (Easy/Medium/Hard or blank) :- ").strip()
-    topic = input("Topic filter (Array/DP/Graph/etc. or blank) :- ").strip()
+    status = input("Status filter (TYPE understood/need_revision or blank) :- ").strip()
+    difficulty = input("Difficulty filter (TYPE Easy/Medium/Hard or blank) :- ").strip()
+    
+    #  topic list and allowing numeric selection
+    topics = ["Arrays", "DP", "Graph", "Hash Table", "Pointers", "Sorting", "Linked Lists", "Binary search",
+            "Backtracking", "Heaps", "Stacks and queues", "Trees", "Binary Trees", "greedy"]
+
+    print("Or pick from this list (numbers comma-separated):")
+    for i, t in enumerate(topics, 1):
+        print(f"{i}. {t}")
+    pick = input("Pick by number or type names (press Enter to skip): ").strip()
+    if pick:
+        if all(c.isdigit() or c.isspace() or c == "," for c in pick):
+            # numeric selection -> convert to names
+            nums = [int(x.strip()) - 1 for x in pick.split(",") if x.strip()]
+            selected = [topics[n] for n in nums if 0 <= n < len(topics)]
+            topic = ",".join(selected)
+        else:
+            # treat as typed names
+            topic = pick
+    else:
+        topic = None
+
 
     # empty strings to None
     status = status or None

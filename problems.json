@@ -1,6 +1,43 @@
-[ # Example
-   {
+[
+    {
         "id": 1,
+        "name": "Permutation in String",
+        "platform": "Leetcode",
+        "difficulty": "Medium",
+        "status": "understood",
+        "topic": ["hash table",
+                  "Pointers"],
+        "Date Solved": "2025-12-08"
+    },
+    {
+        "id": 2,
+        "name": "Search a 2D Matrix",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "status": "need_revision",
+        "topic": "Arrays",
+        "Date Solved": "2025-12-08"
+    },
+    {
+        "id": 3,
+        "name": "LRU Cache",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "status": "reed_revision",
+        "topic": "hash table",
+        "Date Solved": "2025-12-08"
+    },
+    {
+        "id": 5,
+        "name": "Maximum Total Subarray Value II",
+        "platform": "LeetCode",
+        "difficulty": "Hard",
+        "status": "to-do",
+        "topic": "Binary Trees",
+        "Date Solved": "2025-12-08"
+    },
+    {
+        "id": 6,
         "name": "Trapping Rain Water",
         "platform": "LeetCode",
         "difficulty": "Hard",
@@ -12,4 +49,16 @@
         ],
         "Date Solved": "2025-12-08"
     },
+    {
+        "id": 7,
+        "name": "gas Station",
+        "platform": "LeetCode",
+        "difficulty": "Medium",
+        "status": "understood",
+        "topic": [
+            "Arrays",
+            "greedy"
+        ],
+        "Date Solved": "2025-12-12"
+    }
 ]
